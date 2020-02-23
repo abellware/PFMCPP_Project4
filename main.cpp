@@ -108,7 +108,9 @@ int IntType::subtract( int x, int y )
 
 int IntType::divide( int x, int y )
 {
+
     return x / y; 
+
 }
 
 int IntType::multiply( int x, int y )
@@ -120,40 +122,40 @@ int IntType::multiply( int x, int y )
 #include <iostream>
 int main()
 {  
-FloatType ft1; 
-FloatType ft2;
-FloatType ft3;
+    FloatType ft1; 
+    FloatType ft2;
+    FloatType ft3;
 
-DoubleType dt1;
-DoubleType dt2;
-DoubleType dt3;
+    DoubleType dt1;
+    DoubleType dt2;
+    DoubleType dt3;
 
-IntType it1;
-IntType it2;
-IntType it3;
+    IntType it1;
+    IntType it2;
+    IntType it3;
 
-auto floatAddResult = ft1.add(3.2f, 23.f);
-auto floatDivideResult = ft2.divide(3.2f, 23.0f);
-auto floatMultiplyResult = ft3.multiply(3.2f, 23.f);
+    auto floatAddResult = ft1.add(3.2f, 23.f);
+    auto floatDivideResult = ft2.divide(3.2f, 23.0f);
+    auto floatMultiplyResult = ft3.multiply(3.2f, 23.f);
 
-auto doubleSubtractResult = dt1.subtract(3.2, 0.004);
-auto doubleAddResult = dt2.add(3.2, 23.0);
-auto doubleDivideResult = dt3.divide(3.2, 23.0);
+    auto doubleSubtractResult = dt1.subtract(3.2, 0.004);
+    auto doubleAddResult = dt2.add(3.2, 23.0);
+    auto doubleDivideResult = dt3.divide(3.2, 23.0);
 
-auto intMultiplyResult = it1.multiply(3.2, 23.0);
-auto intAddResult = it2.add(3.2, 23.0);
-auto intSubtractResult = it3.subtract(3.2, 23.0);
+    auto intMultiplyResult = it1.multiply(3, 23);
+    auto intAddResult = it2.add(3, 23);
+    auto intSubtractResult = it3.subtract(3, 23);
 
-std::cout << "result of ft1.add(): " << floatAddResult << std::endl;
-std::cout << "result of ft2.divide(): " << floatDivideResult << std::endl;
-std::cout << "result of ft3.multiply(): " << floatMultiplyResult << std::endl;
+    std::cout << "result of ft1.add(): " << floatAddResult << std::endl;
+    std::cout << "result of ft2.divide(): " << floatDivideResult << std::endl;
+    std::cout << "result of ft3.multiply(): " << floatMultiplyResult << std::endl;
 
-std::cout << "result of dt1.subtract(): " << doubleSubtractResult << std::endl;
-std::cout << "result of dt2.add(): " << doubleAddResult << std::endl;
-std::cout << "result of dt3.divide(): " << doubleDivideResult << std::endl;
+    std::cout << "result of dt1.subtract(): " << doubleSubtractResult << std::endl;
+    std::cout << "result of dt2.add(): " << doubleAddResult << std::endl;
+    std::cout << "result of dt3.divide(): " << doubleDivideResult << std::endl;
 
-std::cout << "result of it1.multiply(): " << intMultiplyResult << std::endl;
-std::cout << "result of it2.add(): " << intAddResult << std::endl;
-std::cout << "result of it3.subtract(): " << intSubtractResult << std::endl;
-std::cout << "good to go!" << std::endl;
+    std::cout << "result of it1.multiply(): " << intMultiplyResult << std::endl;
+    std::cout << "result of it2.add(): " << intAddResult << std::endl;
+    std::cout << "result of it3.subtract(): " << intSubtractResult << std::endl;
+    std::cout << "good to go!" << std::endl;
 }
